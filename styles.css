@@ -1,0 +1,147 @@
+body{
+    background-image: url('./images/wallpaper.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Optional: Makes the background fixed when scrolling */
+    /* Fallback background color in case the image doesn't load */
+    background-color: #a0c8e0; /* A light blue, for example */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 18px;
+    justify-content: center;
+    align-self: center;
+    
+    padding: 10px;
+}
+#city-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 2em;
+}
+
+button {
+    padding: 0.5em 0.5em;
+    /* background-color: rgb(91, 199, 242); */
+    background-color:#b4e1fd;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 5px;
+    /* justify-content: center; */
+    align-self: center;
+    width: 5em;
+    height: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('./images/search.png');
+    background-size: 5em 5em; /* Adjust size of the icon */
+    background-repeat: no-repeat; /* Prevent repeating the icon */
+    background-position: center; /* Center the icon in the button */
+}
+
+#search-button:hover {
+    background-color: rgb(71, 179, 222);
+}
+
+#search-button:active {
+    background-color: rgb(51, 159, 202);
+}
+
+/* .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+} */
+
+/* Main container for weather info */
+.weather-info {
+    font-family: sans-serif; /* Choose a clean font */
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the container */
+    max-width: 50em; /* Limit the width */
+    margin: 20px auto; /* Center the container on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text horizontally within the container */
+}
+
+/* Container for weather details */
+.weather-details {
+    margin-top: 15px; /* Space above the details section */
+}
+
+/* Styling for each individual weather detail line (city, description, temp, humidity, wind) */
+.weather-details > div {
+    display: flex; /* Use flexbox to align icon and text horizontally */
+    align-items: center; /* Vertically center items in the flex container */
+    margin-bottom: 10px; /* Space between each detail line */
+    justify-content: center; /* Center the icon and text group horizontally */
+}
+
+/* Styling for the paragraphs containing weather data */
+.weather-details p {
+    margin: 0; /* Remove default paragraph margin */
+    margin-left: 10px; /* Space between the icon and the text */
+    font-size: 1.5em; /* Slightly larger font size */
+    color: #333; /* Darker text color */
+}
+
+/* Specific styling for the city name */
+#city-name {
+    font-size: 2em; /* Larger font for city name */
+    font-weight: bold; /* Bold text */
+    color: #007bff; /* Blue color for city name */
+    margin-bottom: 10px; /* Space below city name */
+}
+
+/* Specific styling for the weather description */
+#description {
+     font-style: italic; /* Italicize description */
+     color: #555; /* Slightly lighter color */
+     margin-bottom: 15px; /* Space below description */
+}
+
+
+/* Styling for the weather icons */
+.weather-icon {
+    width: 5em; /* Set icon width */
+    height: 5em; /* Set icon height */
+    /* You might want to adjust this size based on your icons */
+}
+
+/* Styling for the error message */
+.error-message {
+    color: #dc3545; /* Red color for error messages */
+    font-weight: bold; /* Bold text */
+    margin-top: 15px; /* Space above the error message */
+    padding: 10px; /* Padding around the error message */
+    border: 1px solid #dc3545; /* Red border */
+    background-color: #f8d7da; /* Light red background */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Initially hide the error message */
+    /* You'll likely use JavaScript to show/hide this */
+}
+
+/* CSS to show the error message (you'd add a class like 'visible' with JS) */
+/*
+.error-message.visible {
+    display: block;
+}
+*/
