@@ -29,4 +29,7 @@ Here's a glimpse of the app:
 
 ---
 
+## Deployed here:
+https://weatherapi-31e61.web.app/
+
 **Made with ❤️ for learning.**
